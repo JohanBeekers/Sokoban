@@ -1,0 +1,25 @@
+﻿<Window x:Name="mainWindow" x:Class="Sokoban.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sokoban" Height="439" Width="608" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" KeyDown="key_Down">
+    <Grid>
+        <Grid Name="mainGrid">
+            <ComboBox Name="comboMaps" HorizontalAlignment="Left" Margin="110,316,0,0" VerticalAlignment="Top" Width="134" MaxDropDownHeight="160" Height="27" FontSize="16" Cursor="Hand" SelectedIndex="0"/>
+            <Canvas Name="canvasTop" HorizontalAlignment="Left" Height="274" VerticalAlignment="Top" Width="602" Background="#FF5EC5F5">
+                <Label Content="Sokoban" Canvas.Left="149" Canvas.Top="61" Width="391" Height="103" FontWeight="Bold" FontSize="72" Foreground="White"/>
+                <Label x:Name="labelHighscore" Content="Highscore" Canvas.Left="372" Canvas.Top="187" Height="58" Width="177" Foreground="#FFFDFDFD" FontSize="36" FontWeight="Bold" FontStyle="Italic" MouseDown="highscore_clicked" MouseEnter="highscore_mouseEnter" MouseLeave="highscore_mouseLeave" Cursor="Hand"/>
+            </Canvas>
+            <Label x:Name="labelStart" Content="Start" Foreground="#FF5EC5F5" FontSize="48" FontWeight="Bold" FontStyle="Italic" MouseDown="start_clicked" MouseEnter="start_mouseEnter" MouseLeave="start_mouseLeave" Cursor="Hand" Margin="318,290,150,29"/>
+        </Grid>
+        <Grid Name="gameGrid" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Name="colInfoGrid"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            
+        </Grid>
+    </Grid>
+</Window>
