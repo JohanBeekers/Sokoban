@@ -55,12 +55,19 @@
     </ApplicationDefinition>
     <Compile Include="HighScore.cs" />
     <Compile Include="InfoGrid.cs" />
+    <Compile Include="InputBox.xaml.cs">
+      <DependentUpon>InputBox.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LevelReader.cs" />
     <Compile Include="ModelLevel.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Board.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="ModelScore.cs" />
+    <Page Include="InputBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

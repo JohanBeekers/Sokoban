@@ -141,8 +141,16 @@ namespace Sokoban
                                 }
                                 else
                                 {
-                                    MessageBox.Show("You won, great leader");
+                                    levelModel.LevelStarted = false;
+                                    InputBox test = new InputBox();
+                                    test.VerticalAlignment = VerticalAlignment.Center;
+                                    test.HorizontalAlignment = HorizontalAlignment.Center;
+                                    gameGrid.Children.Add(test);
+                                    String temp = test.show();
                                     highScore.saveScore(scoreModel, levelModel.StartupLevel);
+                                    
+                                    
+                                    
                                     /**
                                     player = null;
                                     board = null;
