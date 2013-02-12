@@ -143,7 +143,7 @@ namespace Sokoban
             lTargetContAmount = new Label();
             lTargetContAmount.Margin = new Thickness(130, 8, 0, 0);
             lTargetContAmount.FontSize = iFontSize;
-            lTargetContAmount.Content = "/" + levelModel.AmountOfTargets;
+            lTargetContAmount.Content = "/ " + levelModel.AmountOfTargets;
             lTargetContAmount.SetValue(Grid.ColumnProperty, 0);
             lTargetContAmount.SetValue(Grid.RowProperty, 3);
 
