@@ -108,10 +108,17 @@ namespace Sokoban
                         levelModel.TilesBpt[forky, forkx] = null;
                         board.redrawFloor(firstBlockX,firstBlockY);
                     }
+                    else if(levelModel.TilesBpt[firstBlockY,firstBlockX] is BoxHit)
+                    {
+                        Box b = new Box();
+                        levelModel.TilesBpt[secondBlockY, secondBlockX] = b;
+                        levelModel.TilesBpt[firstBlockY, firstBlockX] = levelModel.TilesBpt[forky, forkx];
+                        levelModel.TilesBpt[forky, forkx] = null;
+                        board.redrawFloor(firstBlockX,firstBlockY);
+                    }
                     else
                     {
-                        //dit stukje is orgineel, de if hier boven en de if else hier onder is nieuw voor 
-                        //verandere van box image on target
+                        //dit stukje is orgineel, de if en else if hier boven verandere de image van de box 
                         levelModel.TilesBpt[secondBlockY, secondBlockX] = levelModel.TilesBpt[firstBlockY, firstBlockX];
                         levelModel.TilesBpt[firstBlockY, firstBlockX] = levelModel.TilesBpt[forky, forkx];
                         levelModel.TilesBpt[forky, forkx] = null;
