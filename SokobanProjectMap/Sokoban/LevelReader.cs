@@ -23,12 +23,17 @@ namespace Sokoban
         //Method to get all maps in the map folder and place them in the array maps
         private void readAllMaps()
         {
-            levelModel.Maps = Directory.GetFiles(@"map");
+            List<String> tempArray = new List<String>();
 
-            for (int i = 0; i < levelModel.Maps.Length; i++)
+            foreach(String map in Directory.GetFiles(@"map"))
             {
-                levelModel.Maps[i] = levelModel.Maps[i].Substring(4, levelModel.Maps[i].Count() - 8);
+                if(map.EndsWith(".map"))
+                {
+                    tempArray.Add(map.Substring(4, map.Length - 8));
+                }
             }
+
+            levelModel.Maps = tempArray.ToArray();
         }
 
         //Method to read the map and place it in the 2D list
@@ -62,7 +67,7 @@ namespace Sokoban
                 levelModel.RowLenght++;
                 levelModel.StringList.Add(templist);
             }
-
+            sr.Close();
             levelModel.createArray(levelModel.RowLenght, levelModel.ColumnLenght); 
         }
 

@@ -53,6 +53,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="HighScore.cs" />
     <Compile Include="InfoGrid.cs" />
     <Compile Include="LevelReader.cs" />
     <Compile Include="ModelLevel.cs" />

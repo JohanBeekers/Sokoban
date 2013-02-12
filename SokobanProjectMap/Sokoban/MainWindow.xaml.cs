@@ -27,6 +27,7 @@ namespace Sokoban
         private Board board;
         private InfoGrid infoGrid;
         private ModelScore scoreModel;
+        private HighScore highScore;
 
         public MainWindow()
         {
@@ -34,6 +35,7 @@ namespace Sokoban
 
             levelModel = new ModelLevel();
             levelReader = new LevelReader(levelModel);
+            highScore = new HighScore();
 
             fillDropdown();
         }
@@ -140,6 +142,7 @@ namespace Sokoban
                                 else
                                 {
                                     MessageBox.Show("You won, great leader");
+                                    highScore.saveScore(scoreModel, levelModel.StartupLevel);
                                     /**
                                     player = null;
                                     board = null;
