@@ -148,7 +148,7 @@ namespace Sokoban
                     //Message if all targets have a box
                     if (levelModel.AmountOfTargetsDone.Equals(levelModel.AmountOfTargets))
                     {
-                        windowMain.nextMap();
+                        windowMain.mapFinished();
                     }
                 }
             }

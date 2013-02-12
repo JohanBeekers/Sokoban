@@ -28,6 +28,7 @@ namespace Sokoban
         private InfoGrid infoGrid;
         private ModelScore scoreModel;
         private HighScore highScore;
+        
 
         public MainWindow()
         {
@@ -129,41 +130,49 @@ namespace Sokoban
             }
         }
 
+        public void mapFinished()
+        {
+            levelModel.LevelStarted = false;
+            InputBox test = new InputBox(this);
+            test.VerticalAlignment = VerticalAlignment.Center;
+            test.HorizontalAlignment = HorizontalAlignment.Center;
+            gameGrid.Children.Add(test);
+        }
+
+        public void saveScore(String userName)
+        {
+            scoreModel.PlayerName = userName;
+            highScore.saveScore(scoreModel, levelModel.StartupLevel);
+        }
+
         public void nextMap()
         {
             for (int i = 0; i < levelModel.Maps.Count(); i++)
-                        {
-                            if (levelModel.Maps[i].ToString().Equals(levelModel.StartupLevel))
-                            {
-                                if (i + 1 >= levelModel.Maps.Count())
-                                {
-                                    MessageBox.Show("laatste map");
-                                }
-                                else
-                                {
-                                    levelModel.LevelStarted = false;
-                                    InputBox test = new InputBox();
-                                    test.VerticalAlignment = VerticalAlignment.Center;
-                                    test.HorizontalAlignment = HorizontalAlignment.Center;
-                                    gameGrid.Children.Add(test);
-                                    String temp = test.show();
-                                    highScore.saveScore(scoreModel, levelModel.StartupLevel);
-                                    
-                                    
-                                    
-                                    /**
-                                    player = null;
-                                    board = null;
-                                    infoGrid = null;
-                                    scoreModel = null;
-                                    mainGrid = null;
+            {
+                if (levelModel.Maps[i].ToString().Equals(levelModel.StartupLevel))
+                {
+                    if (i + 1 >= levelModel.Maps.Count())
+                    {
+                        MessageBox.Show("laatste map");
+                    }
+                    else
+                    {
+                        //Hier komt alle code om een nieuw level te laden. 
 
-                                    string nextmap = levelModel.Maps[i + 1];
-                                    //this.startLevel(nextmap);
-                                     */
-                                }
-                            }
-                        }
+
+                        /**
+                        player = null;
+                        board = null;
+                        infoGrid = null;
+                        scoreModel = null;
+                        mainGrid = null;
+
+                        string nextmap = levelModel.Maps[i + 1];
+                        //this.startLevel(nextmap);
+                            */
+                    }
+                }
+            }
         }
     }
 }
