@@ -37,5 +37,11 @@ namespace Sokoban
             mainWindow.nextMap();
         }
 
+        private void No_Button(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility.Collapsed;
+            mainWindow.nextMap();
+        }
+
     }
 }

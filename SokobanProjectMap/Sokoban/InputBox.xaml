@@ -3,11 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             mc:Ignorable="d" Width="300" Height="105" BorderThickness="2" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" BorderBrush="Black" HorizontalAlignment="Left" VerticalAlignment="Top">
+             mc:Ignorable="d" Width="300" Height="139" BorderThickness="2" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" BorderBrush="Black" HorizontalAlignment="Left" VerticalAlignment="Top">
     <Grid>
         <Label Name="question" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Content="label"/>
-        <TextBox Name="userName" HorizontalAlignment="Left" Margin="10,0,0,10" TextWrapping="Wrap" Width="196" Height="23" VerticalAlignment="Bottom"/>
-        <Button Content="Ok" HorizontalAlignment="Right" Margin="0,0,10,10" Width="75" Height="23" VerticalAlignment="Bottom" Click="Ok_Button"/>
+        <TextBox Name="userName" Margin="10,0,10,44" TextWrapping="Wrap" Height="23" VerticalAlignment="Bottom"/>
+        <Button Content="Ok" HorizontalAlignment="Right" Margin="0,0,93,10" Width="78" Height="23" VerticalAlignment="Bottom" Click="Ok_Button"/>
+        <Button Content="Don't save" HorizontalAlignment="Right" Margin="0,0,10,10" Width="78" Click="No_Button" Height="23" VerticalAlignment="Bottom"/>
 
     </Grid>
 </UserControl>

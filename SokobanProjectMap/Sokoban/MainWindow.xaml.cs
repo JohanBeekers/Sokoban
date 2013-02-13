@@ -141,7 +141,10 @@ namespace Sokoban
 
         public void saveScore(String userName)
         {
-            scoreModel.PlayerName = userName;
+            if(userName.Length != 0)
+            {
+                scoreModel.PlayerName = userName;
+            }
             highScore.saveScore(scoreModel, levelModel.StartupLevel);
         }
 
