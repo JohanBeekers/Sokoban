@@ -14,18 +14,21 @@ namespace Sokoban
     {
         private ModelLevel levelModel;
         private ModelScore scoreModel;
+        private HighScore highScore;
 
         private DispatcherTimer clock;
 
         private Label lTimer, lMoves, lTimerCont, lMovesCont, lTarget, lTargetCont, lTargetContAmount;
         private Button bReturn;
+        private Grid topTenGrid;
 
         private int iFontSize = 14;
 
-        public InfoGrid(ModelLevel ml, ModelScore t)
+        public InfoGrid(ModelLevel ml, ModelScore t, HighScore hs)
         {
             levelModel = ml;
             scoreModel = t;
+            highScore = hs;
 
             this.Width = levelModel.InfoGridWidth;
 
@@ -57,11 +60,14 @@ namespace Sokoban
             RowDefinition r3 = new RowDefinition();
             r3.Height = new GridLength(40, GridUnitType.Pixel);
 
+            RowDefinition r4 = new RowDefinition();
+            r4.Height = new GridLength(1, GridUnitType.Star);
 
             this.RowDefinitions.Add(r);
             this.RowDefinitions.Add(r1);
             this.RowDefinitions.Add(r2);
             this.RowDefinitions.Add(r3);
+            this.RowDefinitions.Add(r4);
         }
 
         //Create and starts the timer (seconds)
@@ -148,8 +154,109 @@ namespace Sokoban
             lTargetContAmount.SetValue(Grid.RowProperty, 3);
 
             this.Children.Add(lTargetContAmount);
+
+            showTopTen();
         }
 
+        private void showTopTen()
+        {
+            ModelScore[] topTen = highScore.getHighScore(levelModel.StartupLevel, 10).ToArray();
+            topTenGrid = new Grid();
+
+            int headerHeight = 30, rowHeight = 25;
+            
+            //Position and look of the Grid
+            topTenGrid.Margin = new Thickness(5, 0, 5, 5);
+            topTenGrid.SetValue(Grid.ColumnProperty, 0);
+            topTenGrid.SetValue(Grid.RowProperty, 4);
+            topTenGrid.ShowGridLines = true;
+            topTenGrid.MaxHeight = headerHeight + (rowHeight*topTen.Length);
+            topTenGrid.VerticalAlignment = VerticalAlignment.Top;
+
+            var bc = new BrushConverter();
+            topTenGrid.Background = (Brush)bc.ConvertFrom("#E3E3E3");
+
+            //Create the columns
+            ColumnDefinition playerColumn = new ColumnDefinition();
+            playerColumn.Width = new GridLength(1, GridUnitType.Star);
+            ColumnDefinition movesColumn = new ColumnDefinition();
+            movesColumn.Width = new GridLength();
+            ColumnDefinition timeColumn = new ColumnDefinition();
+            timeColumn.Width = new GridLength();
+
+            //Add the columns
+            topTenGrid.ColumnDefinitions.Add(playerColumn);
+            topTenGrid.ColumnDefinitions.Add(movesColumn);
+            topTenGrid.ColumnDefinitions.Add(timeColumn);
+
+            //add the first row and create the header labels. 
+            RowDefinition header = new RowDefinition();
+            header.Height = new GridLength(headerHeight, GridUnitType.Pixel);
+            topTenGrid.RowDefinitions.Add(header);
+            
+            Label playerHeader = new Label();
+            playerHeader.Content = "Player";
+            playerHeader.SetValue(Grid.ColumnProperty, 0);
+            playerHeader.SetValue(Grid.RowProperty, 0);
+            playerHeader.HorizontalAlignment = HorizontalAlignment.Center;
+            playerHeader.VerticalAlignment = VerticalAlignment.Center;
+            playerHeader.FontSize = iFontSize;
+            playerHeader.FontWeight = FontWeights.Bold;
+
+            Label movesHeader = new Label();
+            movesHeader.Content = "Moves";
+            movesHeader.SetValue(Grid.ColumnProperty, 1);
+            movesHeader.SetValue(Grid.RowProperty, 0);
+            movesHeader.HorizontalAlignment = HorizontalAlignment.Center;
+            movesHeader.VerticalAlignment = VerticalAlignment.Center;
+            movesHeader.FontSize = iFontSize;
+            movesHeader.FontWeight = FontWeights.Bold;
+
+            Label timeHeader = new Label();
+            timeHeader.Content = "Time";
+            timeHeader.SetValue(Grid.ColumnProperty, 2);
+            timeHeader.SetValue(Grid.RowProperty, 0);
+            timeHeader.HorizontalAlignment = HorizontalAlignment.Center;
+            timeHeader.VerticalAlignment = VerticalAlignment.Center;
+            timeHeader.FontSize = iFontSize;
+            timeHeader.FontWeight = FontWeights.Bold;
+
+            topTenGrid.Children.Add(playerHeader);
+            topTenGrid.Children.Add(movesHeader);
+            topTenGrid.Children.Add(timeHeader);
+
+            int rowNumber = 1;
+            foreach(ModelScore score in topTen)
+            {
+                //Create the row
+                RowDefinition row = new RowDefinition();
+                row.Height = new GridLength(rowHeight, GridUnitType.Pixel);
+                topTenGrid.RowDefinitions.Add(row);
+
+                //Add the information to the row columns.. 
+                Label player = new Label();
+                player.Content = score.PlayerName;
+                player.SetValue(Grid.ColumnProperty, 0);
+                player.SetValue(Grid.RowProperty, rowNumber);
+                topTenGrid.Children.Add(player);
+
+                Label moves = new Label();
+                moves.Content = score.Moves;
+                moves.SetValue(Grid.ColumnProperty, 1);
+                moves.SetValue(Grid.RowProperty, rowNumber);
+                topTenGrid.Children.Add(moves);
+
+                Label time = new Label();
+                time.Content = (score.Time / 60) +":"+ (score.Time % 60);
+                time.SetValue(Grid.ColumnProperty, 2);
+                time.SetValue(Grid.RowProperty, rowNumber);
+                topTenGrid.Children.Add(time);
+                
+                rowNumber++;
+            }
+
+            this.Children.Add(topTenGrid);
+        }
 
         private void clock_Tick(object sender, EventArgs e)
         {

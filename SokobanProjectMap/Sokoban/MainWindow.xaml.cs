@@ -111,7 +111,7 @@ namespace Sokoban
 
             scoreModel = new ModelScore();
 
-            infoGrid = new InfoGrid(this.levelModel, scoreModel);
+            infoGrid = new InfoGrid(this.levelModel, scoreModel, highScore);
             infoGrid.SetValue(Grid.ColumnProperty, 1);
             infoGrid.SetValue(Grid.RowProperty, 0);
             gameGrid.Children.Add(infoGrid);

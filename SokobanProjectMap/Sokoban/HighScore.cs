@@ -9,22 +9,36 @@ namespace Sokoban
 {
     class HighScore
     {
-        List<ModelScore> scores = new List<ModelScore>();
-        String file;
+        private List<ModelScore> scores = new List<ModelScore>();
+        private String file;
 
         public List<ModelScore> getHighScore(String level)
+        {
+            return getHighScore(level, -1);
+        }
+
+        public List<ModelScore> getHighScore(String level, int maxResults)
         {
             file = "map/" + level + ".score";
 
             if(File.Exists(file))
             {
+                scores.Clear();
                 StreamReader sr = new StreamReader(file);
 
                 String line;
+                int resultNumber = 1;
                 while ((line = sr.ReadLine()) != null)
                 {
                     String[] scoreInfo = line.Split(';');
                     scores.Add(new ModelScore(scoreInfo[0], Convert.ToInt32(scoreInfo[1]), Convert.ToInt32(scoreInfo[2])));
+
+                    //Bij een maxResults waarde (voor een top 10 bijvoorbeeld) de loop doorbreken.
+                    if (maxResults != -1 && resultNumber >= maxResults)
+                    {
+                        break;
+                    }
+                    resultNumber++;
                 }
                 sr.Close();
             }
