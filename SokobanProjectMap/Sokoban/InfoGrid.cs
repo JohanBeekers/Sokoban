@@ -161,6 +161,11 @@ namespace Sokoban
         private void showTopTen()
         {
             ModelScore[] topTen = highScore.getHighScore(levelModel.StartupLevel, 10).ToArray();
+            if (topTen.Length == 0)
+            {
+                return;
+            }
+
             topTenGrid = new Grid();
 
             int headerHeight = 30, rowHeight = 25;
