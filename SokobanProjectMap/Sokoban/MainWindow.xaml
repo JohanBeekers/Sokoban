@@ -8,6 +8,16 @@
             <Canvas Name="canvasTop" Height="274" VerticalAlignment="Top" Background="#FF5EC5F5">
                 <Label Content="Sokoban" Canvas.Left="149" Canvas.Top="61" Width="391" Height="103" FontWeight="Bold" FontSize="72" Foreground="White"/>
                 <Label x:Name="labelHighscore" Content="Highscore" Canvas.Left="372" Canvas.Top="187" Height="58" Width="177" Foreground="#FFFDFDFD" FontSize="36" FontWeight="Bold" FontStyle="Italic" MouseDown="highscore_clicked" MouseEnter="highscore_mouseEnter" MouseLeave="highscore_mouseLeave" Cursor="Hand"/>
+                <Image Height="118" Canvas.Left="35" Canvas.Top="147" Width="258" Source="image/uitleg.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-12.461"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
             </Canvas>
             <Label x:Name="labelStart" Content="Start" Foreground="#FF5EC5F5" FontSize="48" FontWeight="Bold" FontStyle="Italic" MouseDown="start_clicked" MouseEnter="start_mouseEnter" MouseLeave="start_mouseLeave" Cursor="Hand" Margin="318,0,0,29" Height="91" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="134"/>
         </Grid>
