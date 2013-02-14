@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sokoban
 {
-    class HighScore
+    public class HighScore
     {
         private List<ModelScore> scores = new List<ModelScore>();
         private String file;
@@ -19,6 +19,7 @@ namespace Sokoban
 
         public List<ModelScore> getHighScore(String level, int maxResults)
         {
+            scores.Clear();
             file = "map/" + level + ".score";
 
             if(File.Exists(file))

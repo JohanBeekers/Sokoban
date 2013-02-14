@@ -28,6 +28,7 @@ namespace Sokoban
         private InfoGrid infoGrid;
         private ModelScore scoreModel;
         private HighScore highScore;
+        private HighScoreView highScoreView;
         
 
         public MainWindow()
@@ -38,10 +39,14 @@ namespace Sokoban
             levelReader = new LevelReader(levelModel);
             highScore = new HighScore();
 
+            highScoreView = new HighScoreView(levelModel, highScore);
+            mainGrid.Children.Add(highScoreView);
+            highScoreView.Visibility = Visibility.Collapsed;
+
             fillDropdown();
         }
 
-        //Fille the dropdown menu from the array of maps in levelReader
+        //Fill the dropdown menu from the array of maps in levelReader
         private void fillDropdown()
         {
             //Loop through the array Maps of levelReader
@@ -55,7 +60,7 @@ namespace Sokoban
         //Method if highscore clicked
         private void highscore_clicked(object sender, MouseButtonEventArgs e)
         {
-            MessageBox.Show("Highscore");
+            highScoreView.Visibility = Visibility.Visible;
         }
 
         //Method if mouse hover highscore

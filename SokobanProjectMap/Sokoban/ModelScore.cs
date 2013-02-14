@@ -7,7 +7,7 @@ using System.Windows.Threading;
 
 namespace Sokoban
 {
-    class ModelScore
+    public class ModelScore
     {
         private String playerName;
         public String PlayerName
