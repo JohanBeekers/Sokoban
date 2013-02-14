@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" Width="400" Height="390" BorderThickness="2" Background="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}" BorderBrush="Black" HorizontalAlignment="Center" VerticalAlignment="Center">
     <Grid>
-        <ListBox x:Name="levelList" HorizontalAlignment="Left" Margin="10,10,0,10" Width="121" SelectionChanged="levelList_selectionChanged"/>
+        <ListBox x:Name="levelList" HorizontalAlignment="Left" Margin="10,35,0,10" Width="121" SelectionChanged="levelList_selectionChanged"/>
         <ScrollViewer Margin="136,10,10,10" Background="White" VerticalScrollBarVisibility="Auto">
             <Grid x:Name="highScoreGrid" VerticalAlignment="Top" ShowGridLines="True">
                 <Grid.RowDefinitions>
@@ -21,6 +21,7 @@
                 <Label x:Name="headerTimer" Content="Time" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="Bold"/>
             </Grid>
         </ScrollViewer>
+        <Button x:Name="Close_Button" Content="Close" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="Close_Button_Click"/>
 
     </Grid>
 </UserControl>
