@@ -29,6 +29,7 @@ namespace Sokoban
         private ModelScore scoreModel;
         private HighScore highScore;
         private HighScoreView highScoreView;
+        private LevelEditor levelEditor;
         
 
         public MainWindow()
@@ -92,6 +93,24 @@ namespace Sokoban
         {
             var bc = new BrushConverter();
             labelStart.Foreground = (Brush)bc.ConvertFrom("#FF5EC5F5");
+        }
+
+        //Method if level editor clicked
+        private void levelEditor_clicked(object sender, MouseButtonEventArgs e)
+        {
+            startLevelEditor();
+        }
+
+        //Method if mouse hover level editor
+        private void levelEditor_mouseEnter(object sender, MouseEventArgs e)
+        {
+            labelLevelEditor.Foreground = Brushes.Black;
+        }
+
+        //Method if mouse leave level editor
+        private void levelEditor_mouseLeave(object sender, MouseEventArgs e)
+        {
+            labelLevelEditor.Foreground = Brushes.White;
         }
 
         public void startLevel(string level)
@@ -181,6 +200,12 @@ namespace Sokoban
                     }
                 }
             }
+        }
+
+        public void startLevelEditor()
+        {
+            levelEditor = new LevelEditor(levelModel);
+            windowGrid.Children.Add(levelEditor);
         }
     }
 }
