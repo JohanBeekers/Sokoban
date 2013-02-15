@@ -68,6 +68,7 @@
     <Compile Include="ModelLevel.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Board.cs" />
+    <Compile Include="SaveMap.cs" />
     <Compile Include="Tile.cs" />
     <Compile Include="ModelScore.cs" />
     <Page Include="HighScoreView.xaml">
