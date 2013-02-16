@@ -119,6 +119,7 @@ namespace Sokoban
 
             levelReader.readMapString();
             levelReader.readMapObject();
+            levelModel.LevelStarted = true;
 
             //Change the width and height and the title of the window
             this.Width = 16 + (levelModel.ColumnLenght * levelModel.CellSize) + levelModel.InfoGridWidth;
