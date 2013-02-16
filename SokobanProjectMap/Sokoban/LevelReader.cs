@@ -21,7 +21,7 @@ namespace Sokoban
         }
 
         //Method to get all maps in the map folder and place them in the array maps
-        private void readAllMaps()
+        public void readAllMaps()
         {
             List<String> tempArray = new List<String>();
 
@@ -39,6 +39,9 @@ namespace Sokoban
         //Method to read the map and place it in the 2D list
         public void readMapString()
         {
+            levelModel.StringList.Clear();
+            levelModel.RowLenght = 0;
+            levelModel.ColumnLenght = 0;
             levelModel.LevelStarted = true;
 
             //Add the right extensions the level name
@@ -73,6 +76,8 @@ namespace Sokoban
 
         public void readMapObject()
         {
+            levelModel.Tiles.Clear();
+            levelModel.AmountOfTargets = 0;
             for (int y = 0; y < levelModel.RowLenght; y++)
             {
                 List<Tile> row = new List<Tile>();

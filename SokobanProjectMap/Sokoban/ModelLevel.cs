@@ -66,14 +66,14 @@ namespace Sokoban
 
 
         //Contains the 2D list which contains the Target, Box and player objects
-        private TileBpt[,] tilesBpt;
+        private Tile[,] tilesBpt;
 
         public void createArray(int i, int j)
         {
-            tilesBpt = new TileBpt[i, j];
+            tilesBpt = new Tile[i, j];
         }
 
-        internal TileBpt[,] TilesBpt
+        internal Tile[,] TilesBpt
         {
             get { return tilesBpt; }
             set { tilesBpt = value; }

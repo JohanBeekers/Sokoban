@@ -70,7 +70,7 @@ namespace Sokoban
             {
                 for (int x = 0; x < levelModel.ColumnLenght; x++)
                 {
-                    TileBpt t = levelModel.TilesBpt[y,x];
+                    Tile t = levelModel.TilesBpt[y,x];
                     if (t != null)
                     {
                         t.SetValue(Grid.ColumnProperty, x);

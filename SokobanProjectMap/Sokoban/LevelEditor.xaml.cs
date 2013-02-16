@@ -22,14 +22,16 @@ namespace Sokoban
     {
         private List<List<Tile>> tiles = new List<List<Tile>>();
         private ModelLevel levelModel;
+        private LevelReader levelReader;
         private static int minGridWidth = 5, minGridHeight = 5, maxGridWidth = 9, maxGridHeight = 9;
 
-        public LevelEditor(ModelLevel levelModel)
+        public LevelEditor(ModelLevel levelModel, LevelReader levelReader)
         {
             InitializeComponent();
 
             //Fill the list with existing levels
             this.levelModel = levelModel;
+            this.levelReader = levelReader;
             mapsListBox.ItemsSource = levelModel.Maps;
 
             //Fill the list with level tiles.
@@ -217,7 +219,7 @@ namespace Sokoban
             int width = levelGrid.ColumnDefinitions.Count();
             int height = levelGrid.RowDefinitions.Count();
 
-            //Move the wall column one right in both grid and array
+            //Move the wall column one left in both grid and array
             foreach (List<Tile> row in tiles)
             {
                 levelGrid.Children.Remove(row[width - 2]);
@@ -232,6 +234,17 @@ namespace Sokoban
         private void saveMap_Click(object sender, RoutedEventArgs e)
         {
             MapSaver save = new MapSaver(tiles, fileName.Text);
+            levelReader.readAllMaps();
+            mapsListBox.ItemsSource = levelModel.Maps;
+        }
+
+        private void mapsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            levelModel.StartupLevel = mapsListBox.SelectedItem.ToString();
+            levelReader.readMapString();
+            levelReader.readMapObject();
+            loadMap();
+            fileName.Text = mapsListBox.SelectedItem.ToString();
         }
 
         private void levelGrid_MouseDown(Object sender, MouseButtonEventArgs e)
@@ -245,8 +258,76 @@ namespace Sokoban
             placeTile(column, row);
         }
 
+        private void loadMap()
+        {
+            //Reset the grid. 
+            levelGrid.Children.Clear();
+            levelGrid.ColumnDefinitions.Clear();
+            levelGrid.RowDefinitions.Clear();
+            tiles.Clear();
+
+            //Create the grid columns.
+            for (int i = 0; i < levelModel.ColumnLenght; i++)
+            {
+                ColumnDefinition GridColumn = new ColumnDefinition();
+                GridColumn.Width = new GridLength(levelModel.CellSize);
+                levelGrid.ColumnDefinitions.Add(GridColumn);
+            }
+
+            for (int i = 0; i < levelModel.RowLenght; i++)
+            {
+                RowDefinition gridRow = new RowDefinition();
+                gridRow.Height = new GridLength(levelModel.CellSize);
+                levelGrid.RowDefinitions.Add(gridRow);
+            }
+
+            List<List<String>> map = levelModel.StringList;
+
+            for (int y = 0; y < levelModel.RowLenght; y++)
+            {
+                List<Tile> row = new List<Tile>();
+                for (int x = 0; x < levelModel.ColumnLenght; x++)
+                {
+                    Tile newTile = new Tile();
+                    switch (map[y][x])
+                    {
+                        case "#":
+                            newTile = new Wall();
+                            break;
+                        case "x":
+                            newTile = new Target();
+                            break;
+                        case "o":
+                            newTile = new Box();
+                            break;
+                        case "@":
+                            newTile = new Forklift();
+                            break;
+                        default:
+                            newTile = new Floor();
+                            break;
+                    }
+
+                    newTile.SetValue(Grid.ColumnProperty, x);
+                    newTile.SetValue(Grid.RowProperty, y);
+
+                    row.Add(newTile);
+                    levelGrid.Children.Add(newTile);
+                }
+                tiles.Add(row);
+            }
+        }
+
         private void placeTile(int x, int y)
         {
+            int width = levelGrid.ColumnDefinitions.Count();
+            int height = levelGrid.RowDefinitions.Count();
+
+            if (x == 0 || y == 0 || x == width - 1 || y == height - 1)
+            {
+                return;
+            }
+
             Tile newTile;
             switch (tilesListBox.SelectedItem.ToString())
             {
@@ -256,12 +337,12 @@ namespace Sokoban
                 case "Sokoban.Target":
                     newTile = new Target();
                     break;
-                /*case "Sokoban.Box":
+                case "Sokoban.Box":
                     newTile = new Box();
                     break;
                 case "Sokoban.Forklift":
                     newTile = new Forklift();
-                    break;*/
+                    break;
                 default:
                     newTile = new Floor();
                     break;

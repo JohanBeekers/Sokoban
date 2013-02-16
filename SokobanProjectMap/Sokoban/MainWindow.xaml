@@ -4,7 +4,7 @@
         Title="Sokoban" Height="439" Width="608" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" KeyDown="key_Down">
     <Grid Name="windowGrid">
         <Grid Name="mainGrid">
-            <ComboBox Name="comboMaps" HorizontalAlignment="Left" Margin="110,0,0,67" VerticalAlignment="Bottom" Width="134" MaxDropDownHeight="160" Height="27" FontSize="16" Cursor="Hand" SelectedIndex="0"/>
+            <ComboBox Name="comboMaps" HorizontalAlignment="Left" Margin="110,0,0,67" VerticalAlignment="Bottom" Width="134" MaxDropDownHeight="160" Height="27" FontSize="16" Cursor="Hand" SelectedIndex="0" DropDownOpened="comboMaps_opened"/>
             <Canvas Name="canvasTop" Height="274" VerticalAlignment="Top" Background="#FF5EC5F5">
                 <Label Content="Sokoban" Canvas.Left="149" Canvas.Top="61" Width="391" Height="103" FontWeight="Bold" FontSize="72" Foreground="White"/>
                 <Label x:Name="labelHighscore" Content="Highscore" Canvas.Left="372" Canvas.Top="187" Height="58" Width="177" Foreground="#FFFDFDFD" FontSize="36" FontWeight="Bold" FontStyle="Italic" MouseDown="highscore_clicked" MouseEnter="highscore_mouseEnter" MouseLeave="highscore_mouseLeave" Cursor="Hand"/>

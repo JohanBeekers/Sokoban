@@ -50,12 +50,7 @@ namespace Sokoban
         //Fill the dropdown menu from the array of maps in levelReader
         private void fillDropdown()
         {
-            //Loop through the array Maps of levelReader
-            for (int i = 0; i < levelModel.Maps.Count(); i++)
-            {
-                //Add each item in the array to the combobox comboMaps
-                comboMaps.Items.Add(levelModel.Maps[i]);
-            }
+            comboMaps.ItemsSource = levelModel.Maps;
         }
 
         //Method if highscore clicked
@@ -111,6 +106,11 @@ namespace Sokoban
         private void levelEditor_mouseLeave(object sender, MouseEventArgs e)
         {
             labelLevelEditor.Foreground = Brushes.White;
+        }
+
+        private void comboMaps_opened(object sender, EventArgs e)
+        {
+            fillDropdown();
         }
 
         public void startLevel(string level)
@@ -204,7 +204,7 @@ namespace Sokoban
 
         public void startLevelEditor()
         {
-            levelEditor = new LevelEditor(levelModel);
+            levelEditor = new LevelEditor(levelModel, levelReader);
             windowGrid.Children.Add(levelEditor);
         }
     }

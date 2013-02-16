@@ -55,28 +55,7 @@ namespace Sokoban
         }
     }
 
-    class TileBpt : Image
-    {
-        private int x;
-        public int X
-        {
-            get { return x; }
-            set { x = value; }
-        }
-        private int y;
-        public int Y
-        {
-            get { return y; }
-            set { y = value; }
-        }
-
-        protected void createImage(string naam)
-        {
-            this.Source = new BitmapImage(new Uri("image/" + naam + ".png", UriKind.Relative));
-        }
-    }
-
-    class Box : TileBpt
+    class Box : Tile
     {
         public Box()
         {
@@ -84,7 +63,7 @@ namespace Sokoban
         }
     }
 
-    class BoxHit : TileBpt
+    class BoxHit : Tile
     {
         public BoxHit()
         {
@@ -92,7 +71,7 @@ namespace Sokoban
         }
     }
 
-    class Forklift : TileBpt
+    class Forklift : Tile
     {
         public Forklift()
         {

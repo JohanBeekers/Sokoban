@@ -10,7 +10,7 @@ namespace Sokoban
 {
     class MapSaver
     {
-        private String file;
+        private String mapName, file;
         private List<List<Tile>> tileMap;
         private String[] stringMap;
         private int forklifts;
@@ -29,6 +29,7 @@ namespace Sokoban
                 }
             }
 
+            this.mapName = mapName;
             this.tileMap = tileMap;
             stringMap = new String[tileMap.Count()];
             forklifts = 0;
@@ -36,12 +37,10 @@ namespace Sokoban
             boxes = 0;
 
             convertToStringMap();
-           /* if (validateMap() != false)
+            if (validateMap())
             {
                 save();
-            }*/
-
-            save();
+            }
         }
 
         private void convertToStringMap()
@@ -65,7 +64,7 @@ namespace Sokoban
                             line += "o";
                             boxes++;
                             break;
-                        case "Forklift":
+                        case "Sokoban.Forklift":
                             line += "@";
                             forklifts++;
                             break;
@@ -86,13 +85,20 @@ namespace Sokoban
                 MessageBox.Show("Er mag maar 1 speler op de map voorkomen.", "Map incorrect", MessageBoxButton.OK, MessageBoxImage.Information);
                 return false;
             }
-            else if(targets == 0)
+            else if (forklifts == 0)
             {
-                MessageBox.Show("Er moet minstens 1 doel op de map voorkomen", "Map incorrect", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Er moet een speler op de map voorkomen.", "Map incorrect", MessageBoxButton.OK, MessageBoxImage.Information);
+                return false;
             }
-            else if(boxes < targets)
+            else if (targets == 0)
             {
-                MessageBox.Show("Er moeten minstens evenveel kisten als doelen op de map voorkomen", "Map incorrect", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Er moet minstens 1 doel op de map voorkomen.", "Map incorrect", MessageBoxButton.OK, MessageBoxImage.Information);
+                return false;
+            }
+            else if (boxes < targets)
+            {
+                MessageBox.Show("Er moeten minstens evenveel kisten als doelen op de map voorkomen.", "Map incorrect", MessageBoxButton.OK, MessageBoxImage.Information);
+                return false;
             }
             return true;
         }
@@ -105,6 +111,7 @@ namespace Sokoban
                 sw.WriteLine(line);
             }
             sw.Close();
+            MessageBox.Show("Map opgeslagen onder de naam '"+mapName+"'.", "Success!", MessageBoxButton.OK);
         }
     }
 }
