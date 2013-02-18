@@ -42,6 +42,7 @@ namespace Sokoban
             levelModel.StringList.Clear();
             levelModel.RowLenght = 0;
             levelModel.ColumnLenght = 0;
+            levelModel.AmountOfTargetsDone = 0;
 
             //Add the right extensions the level name
             String tempFile = "map/" + levelModel.StartupLevel + ".map";

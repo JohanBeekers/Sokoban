@@ -12,6 +12,7 @@ namespace Sokoban
 {
     class InfoGrid : Grid
     {
+        private MainWindow mainWindow;
         private ModelLevel levelModel;
         private ModelScore scoreModel;
         private HighScore highScore;
@@ -24,8 +25,9 @@ namespace Sokoban
 
         private int iFontSize = 14;
 
-        public InfoGrid(ModelLevel ml, ModelScore t, HighScore hs)
+        public InfoGrid(MainWindow mainWindow, ModelLevel ml, ModelScore t, HighScore hs)
         {
+            this.mainWindow = mainWindow;
             levelModel = ml;
             scoreModel = t;
             highScore = hs;
@@ -44,6 +46,11 @@ namespace Sokoban
             clock.Start();
 
             initAll();
+        }
+
+        private void bReturn_Click(object sender, RoutedEventArgs e)
+        {
+            mainWindow.mainMenu();
         }
 
         private void createGrid()
@@ -86,6 +93,7 @@ namespace Sokoban
             bReturn.Content = "Geef het op...";
             bReturn.SetValue(Grid.ColumnProperty, 0);
             bReturn.SetValue(Grid.RowProperty, 0);
+            bReturn.Click += bReturn_Click;
 
             this.Children.Add(bReturn);
 

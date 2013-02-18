@@ -125,7 +125,7 @@ namespace Sokoban
             this.Width = 16 + (levelModel.ColumnLenght * levelModel.CellSize) + levelModel.InfoGridWidth;
             this.Height = 39 + (levelModel.RowLenght * levelModel.CellSize);
             this.MinHeight = 39 + (8 * levelModel.CellSize);
-            this.Title += ": " + levelModel.StartupLevel;
+            this.Title = "Sokoban: " + levelModel.StartupLevel;
 
             colInfoGrid.Width = new GridLength(levelModel.InfoGridWidth);
 
@@ -136,7 +136,7 @@ namespace Sokoban
 
             scoreModel = new ModelScore();
 
-            infoGrid = new InfoGrid(this.levelModel, scoreModel, highScore);
+            infoGrid = new InfoGrid(this, this.levelModel, scoreModel, highScore);
             infoGrid.SetValue(Grid.ColumnProperty, 1);
             infoGrid.SetValue(Grid.RowProperty, 0);
             gameGrid.Children.Add(infoGrid);
@@ -175,6 +175,7 @@ namespace Sokoban
 
         public void nextMap()
         {
+
             for (int i = 0; i < levelModel.Maps.Count(); i++)
             {
                 if (levelModel.Maps[i].ToString().Equals(levelModel.StartupLevel))
@@ -187,20 +188,27 @@ namespace Sokoban
                     {
                         //Hier komt alle code om een nieuw level te laden. 
 
-
-                        /**
-                        player = null;
                         board = null;
                         infoGrid = null;
-                        scoreModel = null;
-                        mainGrid = null;
+
+                        startLevel(levelModel.Maps[i+1]);
 
                         string nextmap = levelModel.Maps[i + 1];
-                        //this.startLevel(nextmap);
-                            */
                     }
+                    break;
                 }
             }
+        }
+
+        public void mainMenu()
+        {
+            levelModel.LevelStarted = false;
+            board.Visibility = Visibility.Collapsed;
+            infoGrid.Visibility = Visibility.Collapsed;
+            mainGrid.Visibility = Visibility.Visible;
+            
+            this.Width = 608;
+            this.Height = 439;
         }
 
         public void startLevelEditor()
