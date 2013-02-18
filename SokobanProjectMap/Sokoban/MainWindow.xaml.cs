@@ -129,6 +129,12 @@ namespace Sokoban
 
             colInfoGrid.Width = new GridLength(levelModel.InfoGridWidth);
 
+            if (board != null)
+            {
+                board.Visibility = Visibility.Collapsed;
+                infoGrid.Visibility = Visibility.Collapsed;
+            }
+
             board = new Board(this.levelModel);
             board.SetValue(Grid.ColumnProperty, 0);
             board.SetValue(Grid.RowProperty, 0);
@@ -175,21 +181,17 @@ namespace Sokoban
 
         public void nextMap()
         {
-
             for (int i = 0; i < levelModel.Maps.Count(); i++)
             {
                 if (levelModel.Maps[i].ToString().Equals(levelModel.StartupLevel))
                 {
                     if (i + 1 >= levelModel.Maps.Count())
                     {
-                        MessageBox.Show("laatste map");
+                        mainMenu();
                     }
                     else
                     {
                         //Hier komt alle code om een nieuw level te laden. 
-
-                        board = null;
-                        infoGrid = null;
 
                         startLevel(levelModel.Maps[i+1]);
 

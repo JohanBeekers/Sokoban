@@ -20,7 +20,7 @@ namespace Sokoban
         private DispatcherTimer clock;
 
         private Label lTimer, lMoves, lTimerCont, lMovesCont, lTarget, lTargetCont, lTargetContAmount;
-        private Button bReturn;
+        private Button bReturn, bReset;
         private Grid topTenGrid;
 
         private int iFontSize = 14;
@@ -51,6 +51,11 @@ namespace Sokoban
         private void bReturn_Click(object sender, RoutedEventArgs e)
         {
             mainWindow.mainMenu();
+        }
+
+        private void bReset_Click(object sender, RoutedEventArgs e)
+        {
+            mainWindow.startLevel(levelModel.StartupLevel);
         }
 
         private void createGrid()
@@ -88,14 +93,28 @@ namespace Sokoban
 
         private void initAll()
         {
-            //Button
+            //Back button
             bReturn = new Button();
-            bReturn.Content = "Geef het op...";
+            bReturn.Content = "Main menu";
             bReturn.SetValue(Grid.ColumnProperty, 0);
             bReturn.SetValue(Grid.RowProperty, 0);
+            bReturn.Width = 100;
+            bReturn.HorizontalAlignment = HorizontalAlignment.Left;
+            bReturn.Margin = new Thickness(0, 0, 0, 0);
             bReturn.Click += bReturn_Click;
 
+            //Reset button
+            bReset = new Button();
+            bReset.Content = "Reset";
+            bReset.SetValue(Grid.ColumnProperty, 0);
+            bReset.SetValue(Grid.RowProperty, 0);
+            bReset.Width = 100;
+            bReturn.HorizontalAlignment = HorizontalAlignment.Left;
+            bReset.Margin = new Thickness(100, 0, 0, 0);
+            bReset.Click += bReset_Click;
+
             this.Children.Add(bReturn);
+            this.Children.Add(bReset);
 
             //Labels for timer
             lTimer = new Label();
