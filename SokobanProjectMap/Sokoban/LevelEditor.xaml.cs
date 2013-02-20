@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -353,6 +354,21 @@ namespace Sokoban
             levelGrid.Children.Remove(tiles[y][x]);
             tiles[y][x] = newTile;
             levelGrid.Children.Add(tiles[y][x]);
+        }
+
+        private void Delete_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            String file;
+            file = "map/" + fileName.Text + ".map";
+
+            if (File.Exists(file))
+            {
+                File.Delete(file);
+                fileName.Text = "";
+                mapsListBox.SelectedIndex = 0;
+                levelReader.readAllMaps();
+                mapsListBox.ItemsSource = levelModel.Maps;
+            }
         }
     }
 }

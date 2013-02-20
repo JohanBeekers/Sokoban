@@ -7,13 +7,13 @@
     <Grid>
         <ListBox x:Name="mapsListBox" HorizontalAlignment="Left" Margin="10,10,0,38" Width="90" SelectionChanged="mapsListBox_SelectionChanged"/>
         <TextBox x:Name="fileName" HorizontalAlignment="Left" Margin="10,0,0,10" TextWrapping="Wrap" Width="90" Height="23" VerticalAlignment="Bottom"/>
-        <Button x:Name="saveMap" Content="Opslaan" HorizontalAlignment="Left" Margin="105,0,0,10" Width="85" Height="23" VerticalAlignment="Bottom" Click="saveMap_Click"/>
-        <Button Content="Terug" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Click="Back_Button_Click"/>
+        <Button x:Name="saveMap" Content="Opslaan" HorizontalAlignment="Left" Margin="105,0,0,10" Width="61" Height="23" VerticalAlignment="Bottom" Click="saveMap_Click" Cursor="Hand"/>
+        <Button Content="Terug" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="75" Click="Back_Button_Click" Cursor="Hand"/>
         <ListBox x:Name="tilesListBox" HorizontalAlignment="Left" Margin="105,10,0,38" Width="85"/>
-        <Button x:Name="horizontalMin" Content="-" HorizontalAlignment="Left" Margin="223,11,0,0" VerticalAlignment="Top" Width="23" Height="19" Click="horizontalMin_Click"/>
-        <Button x:Name="horizontalPlus" Content="+" HorizontalAlignment="Left" Margin="251,11,0,0" VerticalAlignment="Top" Width="23" Height="19" Click="horizontalPlus_Click"/>
-        <Button x:Name="verticalPlus" Content="+" HorizontalAlignment="Left" Margin="195,59,0,0" VerticalAlignment="Top" Width="23" Height="20" Click="verticalPlus_Click"/>
-        <Button x:Name="verticalMin" Content="-" HorizontalAlignment="Left" Margin="195,35,0,0" VerticalAlignment="Top" Width="23" Height="19" Click="verticalMin_Click"/>
+        <Button x:Name="horizontalMin" Content="-" HorizontalAlignment="Left" Margin="223,11,0,0" VerticalAlignment="Top" Width="23" Height="19" Click="horizontalMin_Click" Cursor="Hand"/>
+        <Button x:Name="horizontalPlus" Content="+" HorizontalAlignment="Left" Margin="251,11,0,0" VerticalAlignment="Top" Width="23" Height="19" Click="horizontalPlus_Click" Cursor="Hand"/>
+        <Button x:Name="verticalPlus" Content="+" HorizontalAlignment="Left" Margin="195,59,0,0" VerticalAlignment="Top" Width="23" Height="20" Click="verticalPlus_Click" Cursor="Hand"/>
+        <Button x:Name="verticalMin" Content="-" HorizontalAlignment="Left" Margin="195,35,0,0" VerticalAlignment="Top" Width="23" Height="19" Click="verticalMin_Click" Cursor="Hand"/>
         <Grid x:Name="levelGrid" Margin="223,35,0,-1" ShowGridLines="True" Background="#33000000" HorizontalAlignment="Left" VerticalAlignment="Top" MouseDown="levelGrid_MouseDown">
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"/>
@@ -30,7 +30,8 @@
                 <ColumnDefinition Width="40"/>
             </Grid.ColumnDefinitions>
         </Grid>
-        
+        <Image HorizontalAlignment="Left" Margin="171,0,0,10" Width="19" Source="image/trash.png" Cursor="Hand" MouseDown="Delete_MouseDown" Height="23" VerticalAlignment="Bottom"/>
+
 
 
     </Grid>
