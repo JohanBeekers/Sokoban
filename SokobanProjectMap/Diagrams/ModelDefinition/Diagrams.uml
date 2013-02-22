@@ -36,6 +36,24 @@
         LastKnownName="System"
         LastKnownLocation="Package1_1041.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="aaa6249a-8821-4c10-b90f-fbe18e922578"
+        LastKnownName="View"
+        LastKnownLocation="Package_1543.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="9dcd4298-7357-4876-b2b8-b3f6283187c0"
+        LastKnownName="Controller"
+        LastKnownLocation="Package1_1543.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6148cf40-439a-4697-8f85-db27e0f8b4f3"
+        LastKnownName="Model"
+        LastKnownLocation="Package2_1543.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

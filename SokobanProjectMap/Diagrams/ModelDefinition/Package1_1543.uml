@@ -1,0 +1,2514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="9dcd4298-7357-4876-b2b8-b3f6283187c0"
+  name="Controller" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="94edf182-d507-4604-810b-40f67395d803"
+        name="Player"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7f6cc5bc-c517-453e-8272-3840fc6df7ed"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="8ef20fd1-82b6-4eb0-9a18-3b73c1d43794"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b3f60385-3b20-437a-ba05-3ac588b90ee5">
+                <propertyInstance
+                  Id="d99c4bbe-2b3b-4cfc-baa1-3f03a950531c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb6df1be-557a-4db4-8a24-1d1038a285be">
+                <propertyInstance
+                  Id="8de06559-96fe-4998-89eb-1d856bdadf65"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="10b44f3e-938c-4bcf-853b-0c808eca5440">
+                <propertyInstance
+                  Id="60bed2cb-81dc-432a-b29c-2e326aa32250"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb1ab92c-0922-406d-a79e-ebc14ab9c78b">
+                <propertyInstance
+                  Id="a527ccf0-dec0-4088-9329-d7e527499807"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="be4e4889-d3b9-4879-8600-c08af878dd50">
+                <propertyInstance
+                  Id="fdd02ac3-2a2e-443d-b4e7-3b5af3ea0613"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="0c879c51-2f1b-45f5-a715-daa07fdac871"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="73cacea0-afd1-4215-a0ef-c8b5be4e594f"
+              LastKnownName="Board"
+              LastKnownLocation="Package_1543.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d7af596-a527-4450-808e-02b6df7df381"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="78a49a93-fb88-4657-a61a-4a0cfce23111"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="91ad2052-e619-40f5-9a03-f30cbe1a1160"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="795fc2fe-260d-44a1-b6ac-93798edd6159"
+              LastKnownName="ModelLevel"
+              LastKnownLocation="Package2_1543.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8a65fc3c-ff65-4983-87e7-d8510ce94595"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5622bb8c-f4a0-439b-99f6-811fd01bfd67"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="44b29c0e-d9a9-46dc-884c-75abc01c6985"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8bc07d4e-0ddb-4c76-8cd7-ca1c21d416a7"
+              LastKnownName="ModelScore"
+              LastKnownLocation="Package2_1543.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10f85b88-28d1-41d6-834f-71dc302121e8"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="07f41fd7-2442-4cbf-8103-358d1d917b6b"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="becb5685-11d8-44d8-884d-57f519d2c3a0"
+            name="board"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6fc83a61-def9-4068-9621-443376cacf6b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3Dboard"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a88b7c8d-7c74-40d3-af2a-a2b4a97b1303"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c553437-2f52-4450-85be-ecbbca406764">
+                    <propertyInstance
+                      Id="3d04c130-2ac2-490b-ba9c-4652015938af"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="623e9ffe-6c2b-42ca-a45d-dc84c8850e47">
+                    <propertyInstance
+                      Id="944d4235-4cf1-4b10-9f80-d026d992c4ea"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0803839-c0d7-465f-9273-82870922f979">
+                    <propertyInstance
+                      Id="d5b9e360-f11a-4f0e-acf4-c3d917e74f1d"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba0dd35d-a4ea-4a39-866d-aa16278022f2">
+                    <propertyInstance
+                      Id="cacb1ada-f170-431a-8ca6-470bb4d967fb"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="266b146a-9ccd-498f-a220-13945d71706b">
+                    <propertyInstance
+                      Id="1eda3b25-6985-490b-b477-c0246abd0674"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="73cacea0-afd1-4215-a0ef-c8b5be4e594f"
+                LastKnownName="Board"
+                LastKnownLocation="Package_1543.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4f5e539a-a006-45bf-a675-9f6473c3ee41"
+            name="levelModel"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="55b11304-7610-4e83-beca-d5129aad83ac"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3DlevelModel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c5b29a00-e6b4-4a0e-8723-078ca4fe2083"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf93573f-4147-4d9f-9cf1-a1764924c594">
+                    <propertyInstance
+                      Id="d42c294a-7eb3-4879-b49b-1831cb2255a5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd544817-c175-4da5-ba31-ad3c110abc7d">
+                    <propertyInstance
+                      Id="a2827a0d-79a3-41f1-ae3b-d21ddee85940"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d994bd51-4929-4fef-8682-79657c6bd27f">
+                    <propertyInstance
+                      Id="65aca13e-8008-4ca5-be2e-33ea8f680cb9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04c62ac0-a3f5-4aef-b520-7ac3807cba41">
+                    <propertyInstance
+                      Id="225b4489-9b9e-460e-a396-1274b54ed5e1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a5a57437-5225-4510-9ad3-f3f37ba425bd">
+                    <propertyInstance
+                      Id="94ae0d57-846e-4f5b-8b6f-ccd40a9ffc4a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="795fc2fe-260d-44a1-b6ac-93798edd6159"
+                LastKnownName="ModelLevel"
+                LastKnownLocation="Package2_1543.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9a110e73-6cb0-4b7c-b770-aa1995872e65"
+            name="scoreModel"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d51fd660-bada-4cf4-90dc-51098b517e9c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3DscoreModel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="54d433d8-77ea-46b1-b598-99bd3bceefd9"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07de05dd-7183-4ab4-b883-6c6d92a63729">
+                    <propertyInstance
+                      Id="0136c8ca-b43b-4586-8ef3-a8e703eeb4c2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bca45a49-ba12-4daa-a6fe-7cd65ff0cf67">
+                    <propertyInstance
+                      Id="0107286a-e542-470b-ba1d-cdd214a33109"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df4b964f-6e9f-40c3-b52b-982dc4ba9b9c">
+                    <propertyInstance
+                      Id="463b71a0-55c6-45ee-81df-2342f6e6146e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6b6f963-32ea-4f90-bc97-cf25f4f7d540">
+                    <propertyInstance
+                      Id="15f4059b-318c-4cff-8e50-7fccf480d482"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5f34977f-d03a-40c9-a1ab-4ff597ea29d7">
+                    <propertyInstance
+                      Id="1f44ffe7-2633-467a-82e8-fb902a12deb5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8bc07d4e-0ddb-4c76-8cd7-ca1c21d416a7"
+                LastKnownName="ModelScore"
+                LastKnownLocation="Package2_1543.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2bb8cbb3-2cb7-4124-a609-f405c374381a"
+            name="windowMain"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c8365ece-e04f-47a6-8ec0-4f1cec8ffac4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3DwindowMain"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f1969e1a-cd94-4d7d-9128-5f13e7247194"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a20c829-90fd-4ce2-9f8b-76711c6858b7">
+                    <propertyInstance
+                      Id="b5a087fc-672e-4fbd-bb68-f7056d51daf4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88aa4610-a023-493d-9395-f8e40a47efd9">
+                    <propertyInstance
+                      Id="f4c03d2d-d013-4052-a8e2-73042e14b7fb"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35c630d7-191c-4736-a0aa-ba27e675ae79">
+                    <propertyInstance
+                      Id="ea2ee6d9-e5ef-4b7b-8f12-cf61fcf806c7"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29fbf96b-d7b5-4933-ac3c-94cb915d50ff">
+                    <propertyInstance
+                      Id="26e48b55-74f3-4b8f-8220-c60861896952"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fafac75-f1f5-44e1-8dd5-50303b695c62">
+                    <propertyInstance
+                      Id="ef598b0e-c877-45eb-bd21-bdbb616b210e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="aa741363-6182-4019-9d64-07fa7c423f73"
+                LastKnownName="MainWindow"
+                LastKnownLocation="Package_1543.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="141bd9c7-cc53-4361-a422-f9872f99b20a"
+            name="forkx"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a3ad31a4-f57f-49b2-9f6a-af3379fb0d05"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3Dforkx"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9fe09cb3-d923-4966-8422-2f461e80b88a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fbd60b3-c5d1-4a07-aee2-6ead68c4d08b">
+                    <propertyInstance
+                      Id="90181ff9-c11a-4cff-814f-0120ff484707"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7b5a674-3b60-4ecf-9db7-1bc689ba3f15">
+                    <propertyInstance
+                      Id="2d6a1b9a-0432-43dc-8570-7ff7f0b7e806"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="900ce7d4-035a-4f09-9f97-7b860aaa88fe">
+                    <propertyInstance
+                      Id="fdaee045-f1ad-4201-96cb-b626ce94f536"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f51a43ae-dd0d-4fa5-8a1a-4f7987373083">
+                    <propertyInstance
+                      Id="6b019bf7-7d12-4f9b-854d-b221d2021e07"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cbe13a7-ff46-4f36-889a-ffa732454e7a">
+                    <propertyInstance
+                      Id="7413f4a4-1455-4f70-bd2a-9ead4add3e0f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d4044bba-a6c4-466d-ac93-a57caf118558"
+            name="forky"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="89a3dc3c-9baa-4c9c-b4d2-e9ee0235a433"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3Dforky"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9c271c0f-be91-46f8-80c4-7977ad3478be"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a45d72f-280b-4f38-9af8-e15b04a37c44">
+                    <propertyInstance
+                      Id="1edbf8be-82df-40ec-8bcd-7eb7fb7cee14"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e97b9ee-cef1-4c88-b1d3-296d43eed0f0">
+                    <propertyInstance
+                      Id="4a1aacb0-1c7c-4175-ab7f-93abb7921cd0"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb8b7d81-93ae-419c-9ec5-d7120b78791f">
+                    <propertyInstance
+                      Id="330dab18-8418-4226-9ad1-5edd77e12795"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdeb0f15-7dc6-48b3-bb28-12bc429136f9">
+                    <propertyInstance
+                      Id="4ac894b5-0853-4a7a-81f2-2460bd323a6e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2fa4d0c-c318-4571-a8fe-8cdcef10183e">
+                    <propertyInstance
+                      Id="57c8a19b-9da7-43a9-9a61-e41750b47b52"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0ee0c4ab-6bde-4ee3-af2c-41141057beb2"
+            name="firstBlockX"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a88b457c-5099-4779-a1d3-61c53e21906d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3DfirstBlockX"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="313d166f-4c0a-4f41-b50f-9ab61a72c8e1"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81b28c61-5b35-466f-8c7f-01e129b3a98b">
+                    <propertyInstance
+                      Id="45eb9b49-5d31-412f-a4f2-e9d6a01bd80d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd65e797-e5fe-4a17-ab66-193786c65d23">
+                    <propertyInstance
+                      Id="5327b124-35f2-431e-8a62-b3400f823e98"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="757fe2b8-5897-4f4f-839b-0c8933c88aa3">
+                    <propertyInstance
+                      Id="fd04c30e-a6d1-4541-874f-eabbce22516b"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="741cd43d-fcc4-4799-928b-ee88bfa809f5">
+                    <propertyInstance
+                      Id="f916a285-11c1-4245-8cd1-c7eb3694bcd4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="182b8268-5cd9-4dab-b733-b3e7022cd198">
+                    <propertyInstance
+                      Id="f9455f29-909b-4001-b429-5e2118aaec9c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="35605e53-06e0-4ba5-943f-4b40d195dd00"
+            name="firstBlockY"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3c333691-e708-42a7-955d-dc5f42f62346"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3DfirstBlockY"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="254b10e9-2315-4e27-aa84-429b341f012d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0363e05e-1793-4250-9a67-4312ed7f8b3a">
+                    <propertyInstance
+                      Id="16ff039b-a23e-4c3a-a0d1-32e922d1c0a9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6403561-db47-4216-9c9c-3a3d1c4d20d3">
+                    <propertyInstance
+                      Id="09a3a503-d958-4ba8-9374-0865aa51af3b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9eb9641e-cc97-47be-85bf-e86e2b3fa4b8">
+                    <propertyInstance
+                      Id="58f51295-bccd-4e9b-9c40-af9e2bf4de21"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="baa488c1-84df-4cd7-b1b1-aeb9fb515383">
+                    <propertyInstance
+                      Id="d30d39d3-030c-4807-a473-60145e6f07e5"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75b17a47-5276-481d-b487-d40979be5ba3">
+                    <propertyInstance
+                      Id="65928cf5-7536-47fa-9148-074698785d8b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8baf5c0d-0e68-4e72-a210-43d049541408"
+            name="secondBlockX"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="30dd67c2-e2b2-4b3e-8ee2-0d64805dba05"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3DsecondBlockX"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5e865945-d568-4d77-b8e1-f2246b159f4a"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e2a7fa3-3efa-4b69-8905-0f8259be3dd0">
+                    <propertyInstance
+                      Id="e78c2541-3f62-4ae7-8f63-c4c0d4ace432"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b1e6e79-b787-419c-937d-aa6cf0c0fa3a">
+                    <propertyInstance
+                      Id="d5ef97f4-8efc-4db8-b2b3-95e2810d36d9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1ffb1f1-3798-4dfb-a89d-b5bbf0e96857">
+                    <propertyInstance
+                      Id="e72d9c1c-1a01-4e5a-933a-048acd10c701"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67ee578d-7eb3-418c-84c3-24785ac57a53">
+                    <propertyInstance
+                      Id="0d6f41a2-dd1f-47c4-bd9e-2423c8f2346b"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c05ba543-1dc6-43af-b354-45676aad951f">
+                    <propertyInstance
+                      Id="648f040f-343d-4b8f-a8c1-06f565a83388"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8723ad3b-2afe-496a-a6a5-2c114b83ade3"
+            name="secondBlockY"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8876e776-3125-4114-a789-d7b4bf02c6e4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3DsecondBlockY"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e0b49b64-c0cf-4b58-a844-46d6e9d5969e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0382115e-5bb8-4dcc-8563-083e98f12c64">
+                    <propertyInstance
+                      Id="ddaddb37-c1dc-4968-a7ef-f4301a821d97"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98a69827-8a5d-442e-b0a7-5210035d9074">
+                    <propertyInstance
+                      Id="f190ade1-3a76-43df-b9b8-0af501b9da6a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cefc5a3-6cca-4e25-96ea-4a1cd00b0c9e">
+                    <propertyInstance
+                      Id="10f230ad-af77-4864-bed5-8adebddb56a4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0423432f-6210-432e-a39a-92f8d4cba940">
+                    <propertyInstance
+                      Id="55523ada-83bf-40cb-8c23-b21bb06d8a4e"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1a21245-5bf4-4cb1-8ffc-395fabe5602f">
+                    <propertyInstance
+                      Id="baabcd8d-f3f7-4dc5-b45e-f19652818f72"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5d064f07-f584-4322-b710-8cb05f6de7e9"
+            name="Player"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5e35d234-24a4-47a1-9d9d-2210a822f9c6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DBoard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelLevel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelScore)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DMainWindow)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="56a27029-3c4f-44ff-8d21-94f0c4be1d8b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84cd07e6-d312-4577-ac1d-49b6f9714781">
+                    <propertyInstance
+                      Id="6b0efdd6-1cbd-4560-85ae-2f2f0f93971d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a5accf0-ce15-4ab5-886b-3651723b2884">
+                    <propertyInstance
+                      Id="70f1e850-4db7-46cf-af22-c31f5d253c76"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="375a31f3-cd64-440c-972a-592d981b6b3c">
+                    <propertyInstance
+                      Id="70d0979e-1255-4c7f-a919-69da5287e519"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c76d0cff-e055-4a37-bbc2-dd58d474e3c9">
+                    <propertyInstance
+                      Id="c1162de6-a806-4b9c-975e-9c99780f8f8b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2db2940c-f4b1-4ba9-8cd5-3a83fa8cd363">
+                    <propertyInstance
+                      Id="50d6999f-6b11-4b72-858b-4f7af64d8882"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a71b0216-a409-463b-bf12-db4eba8cdb90">
+                    <propertyInstance
+                      Id="adde4cae-e133-4a04-94ea-0f659cc3a06d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bf929900-25b1-4060-b063-70311e15ded9"
+                  name="b"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="996a39a2-d954-41eb-92ef-698c47ccade7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DBoard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelLevel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelScore)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DMainWindow)]) ParameterIdentifier%3Db"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="73cacea0-afd1-4215-a0ef-c8b5be4e594f"
+                      LastKnownName="Board"
+                      LastKnownLocation="Package_1543.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bd50ef23-fb5c-470e-8f87-a8a9939d8ac8"
+                  name="m"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e712943a-4f65-4128-9a57-35e6d98e8749"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DBoard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelLevel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelScore)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DMainWindow)]) ParameterIdentifier%3Dm"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="795fc2fe-260d-44a1-b6ac-93798edd6159"
+                      LastKnownName="ModelLevel"
+                      LastKnownLocation="Package2_1543.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b55e2640-8678-43c8-ab5f-bd80d99e6157"
+                  name="s"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c78ab082-14ce-4e59-aadd-4f334a4f9e0e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DBoard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelLevel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelScore)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DMainWindow)]) ParameterIdentifier%3Ds"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8bc07d4e-0ddb-4c76-8cd7-ca1c21d416a7"
+                      LastKnownName="ModelScore"
+                      LastKnownLocation="Package2_1543.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="40f51ee7-211c-4dca-b1ab-3a2c58e22500"
+                  name="mw"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="456cd098-c47f-4dda-837e-0def40498245"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DBoard)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelLevel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelScore)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DMainWindow)]) ParameterIdentifier%3Dmw"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aa741363-6182-4019-9d64-07fa7c423f73"
+                      LastKnownName="MainWindow"
+                      LastKnownLocation="Package_1543.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7200b479-bfdf-4a92-8e8e-a4c5e1ddcede"
+            name="keyPressed"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6a009977-b71c-4a64-8f58-cb3ace12980e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3DkeyPressed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows.Input Type%3DKeyEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bf93862a-d1c8-44a9-aecb-367e27897a2e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34b68112-1b82-452b-a26d-e7e64ea5429a">
+                    <propertyInstance
+                      Id="b2115f01-c831-4de8-8133-c5b84eab8d5c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb96f5c4-c3fe-4975-82bc-13a2286c1ed2">
+                    <propertyInstance
+                      Id="b0ffcd53-e4e5-44d6-a138-6c72ebcd8218"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41e61957-d43e-4d66-8110-af1e55141661">
+                    <propertyInstance
+                      Id="06bf59c9-d2e2-47bc-8b5b-8f4068efebde"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51283a57-c2c9-4c05-bfa2-95e897f17dd9">
+                    <propertyInstance
+                      Id="0daee80a-20ed-433c-b371-d85798fd019e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37bf650e-b717-492f-961c-d482dd43a343">
+                    <propertyInstance
+                      Id="151c8d29-f608-43df-a94e-71e242b02057"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79d09a98-05e2-4832-8149-13f0575c4f9b">
+                    <propertyInstance
+                      Id="1c070275-40d4-4a80-9ad1-164309e59e4f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="687e8184-bcbc-4af3-896c-f64502993d10"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bebc901b-adb8-4428-8a6f-699981a8496c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3DkeyPressed OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FPresentationCore.dll&quot; Namespace%3DSystem.Windows.Input Type%3DKeyEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c5205798-6abc-42ad-b5c8-9dbd89e415f7"
+                      LastKnownName="KeyEventArgs"
+                      LastKnownLocation="Package_1536.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="99a68435-2b7b-45b4-a353-d77de7b9339f"
+            name="move"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="52a0b414-d00e-4a98-a5fd-e86aa0765fff"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3Dmove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="406dfacb-8b18-4a80-9441-05040feede22"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a505ac2d-c6d8-452f-9661-7c2f5af88589">
+                    <propertyInstance
+                      Id="0120a6c2-259c-4ae6-a4e4-a97343eff73e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43c8b322-bf7f-437a-a468-ea7ce584b347">
+                    <propertyInstance
+                      Id="03c019ca-7811-42f4-a389-b49dba0c2734"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37f3ccfd-96df-4eca-b08b-835cf5587cce">
+                    <propertyInstance
+                      Id="243ff01d-5772-44b6-9b04-8ed071ce4d02"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c418ba61-9e7b-4bff-b74a-9a093d2b97f7">
+                    <propertyInstance
+                      Id="0dac7c62-e781-406b-90e0-6e9e947cb72d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a585f47-f362-416e-9b0d-340704b77a9d">
+                    <propertyInstance
+                      Id="80d2122d-e06e-4718-8cd9-b1f7fc2fdd62"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d43e99c-900c-40f3-b20f-c2fecae6c5aa">
+                    <propertyInstance
+                      Id="a258402a-3400-4bb6-b331-2cdfabf097a6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3dff20e-834c-41b4-adba-4a8b102dbf6d"
+                  name="rotate"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4a08db66-1486-4983-9f76-938dc37c5f68"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3Dmove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Drotate"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e81c2eae-b02a-4b8a-bfd6-eb986fdaba43"
+                  name="firstBlockX"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f2a4b4a1-99b6-4422-97f5-64183fd1841e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3Dmove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DfirstBlockX"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5ab25986-f7c0-4fa7-9c43-34a3542c83cd"
+                  name="firstBlockY"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7f794219-126d-4cec-8641-4e46dbffe061"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3Dmove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DfirstBlockY"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1a57f9c5-f944-40ca-9281-2a7a803e9ffa"
+                  name="secondBlockX"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b7c8db3a-ccfa-48ec-a2c6-e551b38e3dcf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3Dmove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DsecondBlockX"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e48975a2-239d-4ae0-b7ae-18f4b248d2ed"
+                  name="secondBlockY"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ebc340db-232e-4f32-a696-ce69a149f0d8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3Dmove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DsecondBlockY"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c3feeb7d-5956-43a0-8e8c-5bccd29a2b7e"
+            name="rotateForklift"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1bed5eda-929a-4cb1-95e3-b2efecf84760"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3DrotateForklift OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1c787404-12a2-4ab1-aef1-319f0f44561b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="023d51ae-9fdb-451f-bdba-97009f6f05d6">
+                    <propertyInstance
+                      Id="affd9912-1b80-4e48-b9b9-7b6a5e141662"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="976a711b-7979-4aa3-aa9f-2faf096653cc">
+                    <propertyInstance
+                      Id="65a50fda-4b6a-4e6d-bcf3-cf841760b8fb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2c31969-c8df-4629-b8cd-326bee0c4924">
+                    <propertyInstance
+                      Id="95026557-62fb-4664-a710-86530c830945"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="711d998e-5704-47c0-aa1e-02f51c829912">
+                    <propertyInstance
+                      Id="ec3c99df-f2e9-40e8-9ad4-74da74ddf2cd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd4d0f71-3c6c-4729-8813-b28b5983736c">
+                    <propertyInstance
+                      Id="aa006f53-cc2f-4ad0-8843-560373865a85"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e367f8a2-766e-4b29-8c43-f892b8152358">
+                    <propertyInstance
+                      Id="7a3a1ecf-3015-4468-bcbc-74237dd58c4b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2e3faff8-a6d6-4404-87de-c1b93096971b"
+                  name="i"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3e98267e-48f5-4e6f-a16f-0e9e6399c002"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DPlayer Member%3D(Name%3DrotateForklift OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Di"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6fce2f9f-b2f9-4acb-8b2d-6c00269af4d5"
+        name="LevelReader"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a354e743-5de5-4d7a-a539-bbe3171d8c55"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DLevelReader"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4cbb7a52-fbf0-4a50-8f07-a9efbe12f695"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41734435-e485-46d6-9e82-17e30c69f9d5">
+                <propertyInstance
+                  Id="1b9ff853-caea-4128-bbc8-607088bda71e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cdae132-01b0-499e-9419-ae03d4c14072">
+                <propertyInstance
+                  Id="abb60bd9-e366-47d1-ae43-8c3cd1aa5ab4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f117b025-978b-4a1d-9afe-11f36021f162">
+                <propertyInstance
+                  Id="c40efc66-2e65-4a6c-a7c8-55d50dd5712d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fde78e6a-d3e8-409b-b73b-b2f239a6211f">
+                <propertyInstance
+                  Id="dd67df57-3afb-4be2-a1f7-864533d46af2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ce088ffe-c0e6-43aa-8491-e57159b91b1c">
+                <propertyInstance
+                  Id="867a58d7-806c-44cd-9ef7-b194d69ad5d8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="804c8c92-c03c-4758-b89d-1e8b5aa6d1b9"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="795fc2fe-260d-44a1-b6ac-93798edd6159"
+              LastKnownName="ModelLevel"
+              LastKnownLocation="Package2_1543.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="40acb8d5-4e90-43e8-857e-ef90d800b8fd"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a0da30a7-47fa-48ca-a3be-e199eed33753"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="73615d83-9aa9-4225-b396-d62c1abd4b2b"
+            name="levelModel"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="14c8ba93-d36a-4884-a5ac-21c1ca1f8300"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DLevelReader Member%3DlevelModel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="289cc123-a896-4f2c-a7e1-cd0f29ca2f4d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb5c8285-69da-44f7-860c-f52911e08f2e">
+                    <propertyInstance
+                      Id="f8d1d4a2-fe2b-461f-8ab1-d2b915790bb4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e070417f-241a-4706-ae8e-792784b8bea9">
+                    <propertyInstance
+                      Id="77f774a8-21d0-4565-9b72-12f8554afba9"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97af6f6e-8600-4cca-a329-fbce40133aff">
+                    <propertyInstance
+                      Id="b7db2667-203a-403f-addf-bcfab56845b1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d0d8807-0b81-4a9b-8586-1f524fb392c3">
+                    <propertyInstance
+                      Id="bc758d60-a296-4e5f-936a-657bd8e62048"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e681cf2-4ce5-4c9d-9645-634e9bf33c41">
+                    <propertyInstance
+                      Id="0a2a0013-bb98-44e3-90a0-d006bc889a77"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="795fc2fe-260d-44a1-b6ac-93798edd6159"
+                LastKnownName="ModelLevel"
+                LastKnownLocation="Package2_1543.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2b0b6d5f-50e5-4e4a-adff-63e349026d2e"
+            name="LevelReader"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="322192d7-3149-4d15-a0dc-4000eb338749"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DLevelReader Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelLevel)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c29960d7-7065-44b4-9785-75e59eeba525"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e98c370-a444-446d-be84-399d86611597">
+                    <propertyInstance
+                      Id="6c093947-fcf5-4123-8065-b3de175ee988"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="616d2f23-1e8b-4e91-9539-a35f655ed8eb">
+                    <propertyInstance
+                      Id="3cf93a11-d9f4-4365-80db-1b70332ea6d5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e9e1233-41a3-41ba-abc4-f7a93fee225b">
+                    <propertyInstance
+                      Id="838d6c3b-97ec-4017-9a24-86f9fb80a6d0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d3cd5ac-a77d-405f-8cb8-3f0076d0a933">
+                    <propertyInstance
+                      Id="1b832fbd-c96b-4573-9ccf-9cef2d8edc56"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b61b2e6-a16b-4e28-9b93-c94f4b8cf12a">
+                    <propertyInstance
+                      Id="ca5277bf-67e6-475f-95c9-9fd3d85efc79"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3460f05e-0473-4a62-9c07-8f21945d4274">
+                    <propertyInstance
+                      Id="4486a55c-b179-4a07-8a25-4f3ab267cbf9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="14a6ef14-2bdf-4f28-b512-ecfce1ba83df"
+                  name="ml"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="28896a43-97d6-4a6c-8c25-9f31ad131ea5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DLevelReader Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelLevel)]) ParameterIdentifier%3Dml"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="795fc2fe-260d-44a1-b6ac-93798edd6159"
+                      LastKnownName="ModelLevel"
+                      LastKnownLocation="Package2_1543.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7b6e1387-605d-49e7-b3f0-ab350aa98a24"
+            name="readAllMaps"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d514e659-f249-4787-ad14-6bdaf1f9d3fd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DLevelReader Member%3DreadAllMaps"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="39bbbf01-388b-49b4-a3ce-c91949c452ca"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2f228a4-c02b-447b-9b00-071aa4384fd4">
+                    <propertyInstance
+                      Id="16f8c7cc-008d-4bd6-8d02-3956a61adcf3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35070c97-1c68-457f-bb28-5ab3079cdd10">
+                    <propertyInstance
+                      Id="0c0ead2e-a900-4474-8e4c-e34634f39294"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f8018ce-c69d-4d17-aeec-02fe14a882ac">
+                    <propertyInstance
+                      Id="c612288f-517c-43d8-be31-50585199a577"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="901910d3-c313-4b20-9ebc-63b0c2f85057">
+                    <propertyInstance
+                      Id="13302450-4fb7-4841-a335-c35d11403b8d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a959c162-68bf-4e0a-b2ab-b6e60717a811">
+                    <propertyInstance
+                      Id="1e5f9094-f345-4573-9018-ca70acac9b4e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a459c222-b63c-453d-882c-3e027e364afe">
+                    <propertyInstance
+                      Id="c78428a5-4522-49c0-8f54-7261833a2dee"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="bd9b195a-f359-49a5-9d85-dafcd1d5015e"
+            name="readMapString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="11cfe55e-50bc-40b2-b06e-7b332c0c32ef"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DLevelReader Member%3DreadMapString"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c6f2b343-a86a-4199-a2c3-94e046692c2c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18577ba7-2cd8-4e10-b985-efb5ca14a955">
+                    <propertyInstance
+                      Id="808e0295-7401-47c2-8f66-aecd203756fe"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3313e13-e853-4e59-aae1-c2b7a985ff5f">
+                    <propertyInstance
+                      Id="3492b158-4fd0-4504-820a-72c860d1e9f2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd6842f3-f836-40a5-9560-3a542a6a3ac8">
+                    <propertyInstance
+                      Id="bbde5ad9-1e1f-466e-a112-6d66e78981e8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bc5d6b4-db95-40fc-aea5-1d64020836f9">
+                    <propertyInstance
+                      Id="5e6888d2-c544-425a-8d99-7ec4527cd42f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94c90e00-e9e3-4c7e-9f9e-e70f0471fc5d">
+                    <propertyInstance
+                      Id="ad86d6a2-9d38-492b-be74-ae2aae4fd868"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ec691b2-ae44-4908-a14c-987128e00601">
+                    <propertyInstance
+                      Id="dec7b86b-9fd0-409c-a580-bb8e28ad40db"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="c42bd3fe-a797-45d7-ac03-d7eeec9bc5c7"
+            name="readMapObject"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="24c854b4-1e86-4474-b05f-fc7efa6250f0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DLevelReader Member%3DreadMapObject"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4fa19539-3f2d-4ef9-9533-7353a836bb5c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6391fab0-9400-4145-ad7e-49013f3337d5">
+                    <propertyInstance
+                      Id="c9d7189b-6d4b-478f-b095-8b46a4b7f7e3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b91c3a7-0cea-467a-9d42-ab5a89e0a654">
+                    <propertyInstance
+                      Id="0de46faa-4cf1-459e-9a94-24a8db163f62"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1810177b-9306-4480-9d8e-dcbb1d7c4131">
+                    <propertyInstance
+                      Id="4ae9fcbd-ed10-4d3a-b32a-6cab0dfef1be"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9226de64-acb1-4223-a223-1e1a5a2ffd61">
+                    <propertyInstance
+                      Id="6c9ec6a5-404c-4a23-8ba2-d4eb1199c50b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cee1c2e8-4a5a-48d7-9b23-14736c78034f">
+                    <propertyInstance
+                      Id="b99073dc-e5b0-47fa-b732-5b7cea397cfa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1cb623b-eaab-4bd8-b565-d1dc38d1c5be">
+                    <propertyInstance
+                      Id="13800581-1749-464f-a765-e5f29a5af157"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c1c3ab4a-2807-4428-9e93-47f197d80f24"
+        name="HighScore"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="82bb618f-d4dd-48f9-b289-55c6822c0913"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f3c30b56-be88-49b4-a4c5-4ce376341c1c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ed356fed-9496-4f83-a1cc-300b5ba36a45">
+                <propertyInstance
+                  Id="1cff4791-317c-45ca-b514-552bd2aa8eec"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f117ecc1-6ac8-4eb9-a4aa-c3ecf2ed410f">
+                <propertyInstance
+                  Id="671fee65-c8b3-46dd-84b9-d413e6192ebf"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41c6d5c7-a518-48ca-bf24-c499ffb61761">
+                <propertyInstance
+                  Id="cd7b8272-5129-476e-aafd-d399f45b5fba"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8267297d-7ecc-4736-8867-b736c69b197b">
+                <propertyInstance
+                  Id="7a73946c-9851-4a2a-88f7-9c5a28ffbae1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a4a6030c-477f-444f-a74a-abae4fef58f6">
+                <propertyInstance
+                  Id="bd42c150-9c1a-4008-b1bf-b2d73d83931c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="3f6232b2-8d0c-40c8-8c3c-af9b3db2ddd6"
+            isDerived="false"
+            sourceEndRoleName=""
+            targetEndRoleName=""
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8bc07d4e-0ddb-4c76-8cd7-ca1c21d416a7"
+              LastKnownName="ModelScore"
+              LastKnownLocation="Package2_1543.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9f1ab117-8dfc-4a37-94da-e4dcc882a356"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67d05c34-cccb-410e-a033-1243e7939ba3"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b8c55dfd-ca78-4756-919a-446aa553acf0"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bba342d7-57f2-47f5-92a4-1328461e3d9f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="2d80c347-9601-475b-85c8-5bdc6539993b"
+            name="scores"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5ac73ec4-a088-4031-9805-96049a8faad7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3Dscores"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="123e9389-4236-4a1c-8710-9440014bdbc8"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af8a9033-bdb9-4e3c-83a1-4f9c600c2a17">
+                    <propertyInstance
+                      Id="33dfbc85-15d2-4f35-9b5a-9adc872dc923"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bd80f06-3b42-4ae6-aebc-feae1381aaf7">
+                    <propertyInstance
+                      Id="3c6edda4-33e9-4b4d-9a51-ed4596b72a6d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41b182a6-f51d-4c5b-b387-96986869033a">
+                    <propertyInstance
+                      Id="d11037fc-27b1-4ee5-abf4-9a8c81b1b5e5"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ddc55fdb-e62c-4715-bc4b-1c8bb6e61578">
+                    <propertyInstance
+                      Id="5d28a020-6ba7-44fc-96e5-d7404cd502e2"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de607ba1-affc-4f0d-b2b8-1eb49bbee743">
+                    <propertyInstance
+                      Id="119ec875-3945-40f4-893d-eafdf8051528"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6d9e3b9b-67d6-4c54-a10e-b0295901a86f"
+                LastKnownName="List&lt;ModelScore‎&gt;"
+                LastKnownLocation="Package1_1534.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0b380ea1-d772-4071-ad44-7f8be7209cfe"
+            name="file"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e562e547-0268-4c13-983f-0c98827cc845"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3Dfile"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6c9ece20-41bf-4c83-b524-243e30133cfa"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39f27fe0-8fef-4fd8-9211-40b9ef721349">
+                    <propertyInstance
+                      Id="be429c9e-887f-4efb-8612-835f3921f687"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e023cff6-2f41-4a96-b422-da07f2e73d15">
+                    <propertyInstance
+                      Id="2e7cce94-b315-4c7c-9ac7-0dc15663b2b5"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95598f2c-1297-45ed-bee7-c3f212926e16">
+                    <propertyInstance
+                      Id="d1e79164-bf26-4d04-ad10-75db0913c6f4"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d928878-d0de-451d-838f-85ddff648ced">
+                    <propertyInstance
+                      Id="54ccfa04-767e-47ca-bcb6-82d774203dad"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08a46e28-b08d-4d55-88e7-a765339a89b4">
+                    <propertyInstance
+                      Id="8ed2f08f-2e3a-42ad-a889-00e7f6db3fe7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d1214838-f7c0-40fd-a3c0-5dded4d60ffe"
+            name="getHighScore"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ac298929-87dd-4bd0-bacc-d59e944845be"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D(Name%3DgetHighScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3fec6a91-dae8-48dc-9bb1-a02918456d8b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ba854cf-c07b-4365-98fe-38621a5d17bc">
+                    <propertyInstance
+                      Id="d51ee41f-9b54-434b-81cc-99b8b52cf1ce"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="958857e2-cf62-48eb-9bb4-e70ea9af70bf">
+                    <propertyInstance
+                      Id="e8aa632f-e5e7-4ca1-a899-e0fec5bee2cc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e445633-dd20-4221-b09d-f47e6106b33d">
+                    <propertyInstance
+                      Id="ef14df92-5170-4a3e-90f0-61cdfb68c013"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="282b56c0-f00f-4121-8f64-7ea9b138809e">
+                    <propertyInstance
+                      Id="02a33ac9-211e-484a-adbd-b0d9c3b1f4c7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3445bc6b-0acd-4e7c-bd38-f0b9235bc8a5">
+                    <propertyInstance
+                      Id="8c518991-536d-4ee2-a3ce-8548fc04a45a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a2c9b14-346e-4a21-b801-3728c8b897b8">
+                    <propertyInstance
+                      Id="28616afa-8b22-4ddc-a1d4-38e4ed472a71"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="05d52494-a060-41bf-972a-b8b3df19566a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6d9e3b9b-67d6-4c54-a10e-b0295901a86f"
+                      LastKnownName="List&lt;ModelScore‎&gt;"
+                      LastKnownLocation="Package1_1534.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c4385478-552f-4879-83d0-4cae0acf941a"
+                  name="level"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="af12fbbe-274b-4971-80e5-3c2dc0dfacce"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D(Name%3DgetHighScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dlevel"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="03015d8a-9d5c-4dae-bb11-840f961dc97c"
+            name="getHighScore"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fec2ffda-3405-4419-9fe6-a63d8a13cf9d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D(Name%3DgetHighScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d767fe4e-898d-44b8-a917-80ecd1b9acf6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c25bdc4-7588-4f52-a239-88c77d1d3e4f">
+                    <propertyInstance
+                      Id="724095ef-5626-48d1-ab54-cc63f0107573"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1158ce74-f398-44cd-baac-1b118abf91b5">
+                    <propertyInstance
+                      Id="e7d3d344-3bc9-4068-8a57-a62c27fa7090"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3303a90d-64d1-471a-89ec-86bbc6ec7dc6">
+                    <propertyInstance
+                      Id="d48f8a0f-5394-40dc-af94-b41e40de383a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71f37f1e-95a7-45c5-9d35-0e101bf117c4">
+                    <propertyInstance
+                      Id="3b8a8cdb-cf5d-4796-b801-36b67d07303d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6cfbf8e-9a3b-4a29-8869-89eb2e978743">
+                    <propertyInstance
+                      Id="29068594-2c9c-4d3d-9389-544eb4197a62"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d0160d1-6620-4350-9f8c-8c5bf5f477a5">
+                    <propertyInstance
+                      Id="ba98a4e5-f9f0-468a-997d-bd2ecaf7236d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c08fc787-8648-4d5b-92ba-7dec0e2ece76"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6d9e3b9b-67d6-4c54-a10e-b0295901a86f"
+                      LastKnownName="List&lt;ModelScore‎&gt;"
+                      LastKnownLocation="Package1_1534.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a740ca99-fcbf-4741-aaa1-6ac9548190c5"
+                  name="level"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="600839eb-89b3-4ce2-a5cd-e7d368ac46a5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D(Name%3DgetHighScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dlevel"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7612eaa9-0365-4284-90ad-213cb1013a0c"
+                  name="maxResults"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="090b0c4a-e8b9-4b68-88da-dd8db1841d12"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D(Name%3DgetHighScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DmaxResults"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b6feab38-2c0b-4065-8a19-f1c19385588c"
+            name="saveScore"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="84285204-9ea3-47f0-b592-fb9ae7bfc1a2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D(Name%3DsaveScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelScore)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0156202e-6b99-4672-9ed3-3b351655dd4b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85d31337-3f15-400d-86d2-8fb7c3ca0539">
+                    <propertyInstance
+                      Id="f41abc03-9998-4f0b-8ac7-a09ac3cee353"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="914be818-8fe4-439b-a3b2-8c150b399c67">
+                    <propertyInstance
+                      Id="84c0f00a-bee4-43f6-af5e-f8735c55ef13"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdbab2ac-bdef-4f6f-b83a-aa4f7aba7a32">
+                    <propertyInstance
+                      Id="65ad131e-7f57-4475-9c8e-f4edd0f91971"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6989eb94-ed50-4557-9223-3f224a9c1ebe">
+                    <propertyInstance
+                      Id="dc523a56-2c25-43bf-90d1-ac534a71f392"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4d44279-441c-4995-8404-67a9cdb5f2f1">
+                    <propertyInstance
+                      Id="dfa80750-c76b-44a8-89de-79fd593895a0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1750657-3399-4af1-91cd-a8694702455c">
+                    <propertyInstance
+                      Id="48ab99f5-9817-4652-b124-fa36920c0384"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8bab0a85-f131-4066-ac94-c2a1b19f8a97"
+                  name="score"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7b4eb118-7357-4393-b5c0-692d696b9973"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D(Name%3DsaveScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelScore)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dscore"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8bc07d4e-0ddb-4c76-8cd7-ca1c21d416a7"
+                      LastKnownName="ModelScore"
+                      LastKnownLocation="Package2_1543.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1590f80e-a0a1-469b-af9a-5ee27c1d1890"
+                  name="level"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b4f8f0eb-5962-4cf1-997a-0c3cd9c79cc7"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D(Name%3DsaveScore OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelScore)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dlevel"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a9afd5bb-7242-4387-8955-23fdc256fde4"
+            name="zoekInsertPositie"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4d9f5006-aca0-47a6-bda7-a0565c4ce1a5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D(Name%3DzoekInsertPositie OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelScore)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fd3b23c1-a6e9-41d2-ac5f-6cc891294672"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6321ff54-4c98-4103-b694-098772ff59b5">
+                    <propertyInstance
+                      Id="a767b36d-853d-4141-a80b-ad6c46495690"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0beb7ed3-e4bd-40c1-9429-c89ecf0d780b">
+                    <propertyInstance
+                      Id="28de8dd5-9f28-481e-94dd-4891b6deae66"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c9dbbcd-166a-4990-bfdc-0d0b60f7e0f0">
+                    <propertyInstance
+                      Id="ef72b1a5-ef73-40fe-af2e-501b262b5257"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0aaea7de-8766-4260-8232-5711b76f5e4b">
+                    <propertyInstance
+                      Id="498cbd7f-44ce-484f-a84d-e68bb73a41a7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73d089c6-2f8a-4c2e-af90-af9ff9b8b426">
+                    <propertyInstance
+                      Id="8d497257-dadb-4635-82f6-c67645be995c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67c61a41-565a-40db-97b0-9edf0672a589">
+                    <propertyInstance
+                      Id="39e93b20-2474-43fd-a3c1-2dbe09015117"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c21f2c00-8137-4c22-872d-812d1655dded"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="73a48f68-268d-4a31-a146-0f3be8b7c34d"
+                  name="score"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f433bb91-ab96-4f69-ae4f-170b76aab93c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D(Name%3DzoekInsertPositie OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DModelScore)]) ParameterIdentifier%3Dscore"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8bc07d4e-0ddb-4c76-8cd7-ca1c21d416a7"
+                      LastKnownName="ModelScore"
+                      LastKnownLocation="Package2_1543.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="593ad751-0352-4d2d-ab68-fc33a60dab03"
+            name="HighScore"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3da7c406-35c5-46e6-9101-05eb580b7673"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fjohan%2FDocuments%2FVisual Studio 2012%2FProjects%2FSokoban%2FSokobanProjectMap%2FSokoban%2Fbin%2FDebug%2FSokoban.exe&quot; Namespace%3DSokoban Type%3DHighScore Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c2ba3aa8-72a6-47c3-848b-35aaf50df6e4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a586bb73-03da-4693-850d-fa9df64ff52f">
+                    <propertyInstance
+                      Id="9356e485-05f4-450d-8b3e-ab5bb2583459"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a83efd3f-0ccd-4c9d-b6da-6c906a70a867">
+                    <propertyInstance
+                      Id="71a7103a-fe0c-429e-9f3d-69f36716665a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5db1d9a7-3163-4ec2-893a-6f6aa69c164d">
+                    <propertyInstance
+                      Id="d84e3044-08df-4e77-9e09-43daaf34b070"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff48f01d-3447-4a39-8090-f8cfe9ced1f5">
+                    <propertyInstance
+                      Id="6408588d-1794-4302-b6ba-94be2724c9cc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9558622b-3018-46fc-9786-f5424b51b75d">
+                    <propertyInstance
+                      Id="ab90d22f-4b06-4b8c-b096-04ecf81fe34f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2800e297-28af-4584-a5a1-77a932f75efe">
+                    <propertyInstance
+                      Id="7b1f3759-7a39-4501-ae76-e0958a1282b6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
